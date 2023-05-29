@@ -1,4 +1,4 @@
-const submit = document.querySelector('.submitButton')
+const submit = document.querySelector('.submit')
 const error = document.querySelector('.error')
 const form = document.querySelector('form')
 const input = document.querySelector('input')
