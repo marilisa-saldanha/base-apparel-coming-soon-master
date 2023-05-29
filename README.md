@@ -16,8 +16,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL]()
-- [Live Site URL]()
+- [Solution URL](https://www.frontendmentor.io/solutions/base-apparel-coming-soon-using-html-css-flexbox-and-javascript-8qiL-Y8teL)
+- [Live Site URL](https://marilisa-saldanha.github.io/base-apparel-coming-soon-master/)
 
 ## My process
 
