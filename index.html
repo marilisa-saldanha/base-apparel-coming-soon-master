@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+  <script src="./src/script.js" defer></script>
+</head>
+<body>
+
+  <div class="logoMobile">
+    <img src="./images/logo.svg" alt="">
+  </div>
+
+  <main>
+    <section>
+
+      <div class="logoDesktop">
+        <img src="./images/logo.svg" alt="">
+      </div>
+
+      <h1><span>We're</span> coming soon</h1>
+      <p>
+        Hello fellow shoppers! We're currently building our new fashion store. 
+        Add your email below to stay up-to-date with announcements and our launch deals.
+      </p>
+
+      <form autocomplete="off">
+        <div>
+          <input type="email" name="email" id="email" placeholder="Email Address" required>
+          <label for="email">
+            <img src="./images/icon-error.svg" alt="">
+          </label>
+          <button class="submit" type="submit">
+            <img src="./images/icon-arrow.svg" alt="">
+          </button>
+        </div>
+      </form>
+      <small class="error">Please provide a valid email</small>
+    </section>
+
+    <section>
+
+      <picture>
+        <source media="(min-width: 1000px)" srcset="./images/hero-desktop.jpg"">
+        <img src="./images/hero-mobile.jpg" alt="image-woman-mobile">
+      </picture>
+
+    </section>
+  </main>
+
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/marilisa-saldanha" target="_blank">Marilisa Saldanha</a>.
+    </p>
+  </footer>
+</body>
+</html>

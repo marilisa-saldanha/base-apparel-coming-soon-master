@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+:root {
+  /* Colors */
+  /* Primary */
+  --desaturated-red: hsl(0, 36%, 70%);
+  --soft-red: hsl(0, 93%, 68%);
+  /* Neutral */
+  --dark-grayish-red: hsl(0, 6%, 24%);
+  /* Gradient */
+  --white: hsl(0, 0%, 100%);
+  --white-light: hsl(0, 100%, 98%);
+  --very-desaturated-red: hsl(0, 80%, 86%);
+  --very-soft-red: hsl(0, 74%, 74%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+  background: linear-gradient(135deg, var(--white), var(--white-light));
+}
+
+.logoMobile {
+  padding: 2rem 0 0 2rem;
+  width: 9rem;
+}
+
+main {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column-reverse;
+}
+
+main .logoDesktop {
+  display: none;
+}
+
+main section:first-child {
+  text-align: center;
+  padding: 0 2rem 2rem;
+}
+
+main h1 {
+  color: var(--dark-grayish-red);
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  letter-spacing: .6rem;
+}
+
+main h1 span {
+  color: var(--desaturated-red);
+  font-weight: 300;
+}
+
+main p {
+  color: var(--desaturated-red);
+  font-size: .9rem;
+  line-height: 1.5;
+}
+
+main section picture img {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+main form {
+  position: relative;
+}
+
+main form input {
+  background: linear-gradient(var(--white), var(--white-light));
+  padding: .8rem 1rem;
+  border: .063rem solid var(--desaturated-red);
+  border-radius: 1.875rem;
+  width: 100%;
+  margin: 1.5rem 0 0;
+  color: var(--dark-grayish-red);
+  outline: none;
+}
+
+main form input:focus {
+  border: 2px solid var(--very-desaturated-red);
+}
+
+main form input::placeholder {
+  color: var(--desaturated-red);
+  font-size: .72rem;
+  letter-spacing: .06rem;
+  opacity: .6;
+}
+
+.errorInput {
+  border: 2px solid var(--soft-red);
+}
+
+main form label {
+  position: absolute;
+  top: 36.5%;
+  right: 4rem;
+  transform: translateY(30%);
+  display: none;
+}
+
+main form button {
+  border: none;
+  border-radius: 1.875rem;
+  padding: .65rem 1.6rem;
+  cursor: pointer;
+  transition: .3s;
+  background: linear-gradient(135deg, var(--very-desaturated-red), var(--very-soft-red));
+  position: absolute;
+  top: 35.5%;
+  right: -0.5rem;
+  transform: translateY(0.8%);
+}
+
+main form button:hover {
+  background: linear-gradient(135deg, var(--very-desaturated-red), var(--very-desaturated-red));
+}
+
+main .error {
+  color: var(--soft-red);
+  position: absolute;
+  margin: .5rem 0 0;
+  left: 10%;
+  display: none;
+}
+
+footer {
+  text-align: center;
+  font-size: .9rem;
+  color: var(--dark-grayish-red);
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--desaturated-red);
+  font-weight: 400;
+}
+
+@media (min-width: 1000px) {
+  body {
+    background: url('../images/bg-pattern-desktop.svg') no-repeat center/cover;
+  }
+
+  .logoMobile {
+    display: none;
+  }
+
+  main {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main section {
+    flex: 1;
+  }
+
+  main section picture img {
+    margin: 0;
+  }
+
+  main .logoDesktop {
+    display: block;
+    margin-bottom: 5rem;
+    width: 9rem;
+  }
+
+  main section:first-child {
+    text-align: left;
+    padding: 0 5rem 1rem 4rem;
+  }
+
+  main h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: .7rem;
+  }
+
+  main p {
+    font-size: .95rem;
+    line-height: 1.7;
+    margin-bottom: .8rem;
+  }
+
+  main form input {
+    padding: 1rem 1.2rem;
+  }
+
+  main form label {
+    position: absolute;
+    top: 36.5%;
+    right: 6rem;
+    transform: translateY(30%);
+    display: none;
+  }
+
+  main form button {
+    padding: .9rem 2.2rem;
+    top: 31%;
+    right: -0.2rem;
+    transform: translateY(0.8%);
+  }
+
+  main .error {
+    margin: .7rem 0 0;
+    left: 7%;
+    display: none;
+  }
+
+  footer {
+    font-size: .95rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  main .logoDesktop {
+    margin-bottom: 8rem;
+    width: 9rem;
+  }
+}
+
+@media (min-width: 1300px) {
+
+  main .logoDesktop {
+    margin-bottom: 7rem;
+    width: 9rem;
+    margin-top: 0;
+  }
+
+  main section:first-child {
+    padding: 0 8rem 1rem 7rem;
+  }
+
+  main h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: .9rem;
+    line-height: 1.2;
+  }
+
+  main p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: .8rem;
+  }
+
+  main .error {
+    margin: .9rem 0 0;
+    left: 9%;
+  }
+}
+
+@media (min-width: 1400px) {
+
+  main .logoDesktop {
+    margin-bottom: 7rem;
+    width: 10rem;
+    margin-top: 0;
+  }
+
+  main section:first-child {
+    padding: 0 10rem 1rem 8rem;
+  }
+
+  main h1 {
+    font-size: 4.2rem;
+  }
+
+  main p {
+    font-size: 1.3rem;
+    line-height: 1.7;
+    margin-bottom: .8rem;
+  }
+
+  main form input::placeholder {
+    font-size: .8rem;
+  }
+
+  main .error {
+    margin: 1rem 0 0;
+    left: 9%;
+    font-size: .9rem;
+  }
+}
