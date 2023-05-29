@@ -33,6 +33,7 @@ body {
 .logoMobile {
   padding: 2rem 0 0 2rem;
   width: 9rem;
+  margin-bottom: -2rem;
 }
 
 main {
