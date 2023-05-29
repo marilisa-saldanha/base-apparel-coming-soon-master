@@ -27,19 +27,19 @@ img {
 body {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1rem;
-  background: linear-gradient(135deg, var(--white), var(--white-light));
+  background: linear-gradient(135deg, var(--white), var(--white-light));  
 }
 
 .logoMobile {
   padding: 2rem 0 0 2rem;
   width: 9rem;
-  margin-bottom: -2rem;
 }
 
 main {
   display: flex;
   min-height: 100vh;
   flex-direction: column-reverse;
+  justify-content: space-evenly;
 }
 
 main .logoDesktop {
@@ -73,7 +73,7 @@ main p {
 
 main section picture img {
   width: 100%;
-  margin: 2rem 0;
+  margin: .5rem 0 2rem 0;
 }
 
 main form {
